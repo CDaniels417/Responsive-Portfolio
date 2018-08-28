@@ -284,9 +284,10 @@ footer {
 
 @media screen and (max-width: 640px) {
    
-    p, #bio-image, h2, #contact-form, #project-portfolio{
-        width: 95%; 
-        padding: 0 auto;  
+    p, #bio-image, h2, #contact-form {
+        width: 100%; 
+        padding: 0 auto;
+        margin-left: 0;  
     }
 
     nav {
@@ -313,8 +314,13 @@ footer {
        margin-top: 80px;
     }
 
-    #main-bio, #contact, #project-portfolio {
-        width: 75%;
+    #main-bio, #project-portfolio {
+        width: 80%;
+    }
+
+    #contact {
+        margin: 0;
+        width: 90%;
     }
 
     #box {
