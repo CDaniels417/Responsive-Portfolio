@@ -1,0 +1,324 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    color: #777777;
+    font-family: Arial, 'Helvetica Neue', Helvetica, sans-serif;
+    width: auto;
+    text-align: left;
+    line-height: 30px;
+    margin: 0;
+    background-image: url("../images/funky-lines.png");
+
+}
+
+header {
+    background-color: #4aaaa5;
+    float: left;
+    width: 270px;
+    height: 58px;
+    margin-left: 120px;
+    margin-bottom: 0;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    text-align: center;
+    font-size: 25px;
+    padding-top: 15px;
+    color: #ffffff;
+    text-align: center;
+    
+}
+
+#logo{
+    color: #fff;
+}
+
+nav {
+    position: absolute;
+    float: right;
+    text-align: center;
+    width: 270px;
+    left: 820px;
+}
+
+
+ul {
+    list-style: none;
+    margin: 0;
+    
+}
+
+li {
+    float: left;
+    width: 33%;
+    padding: 10px;
+}
+.border {
+    padding: 10px;
+}
+
+a {
+    text-decoration: none;
+    color:#777;
+}
+
+h2 {
+    color: #4aaaa5;
+    font-family: Georgia,'Times New Roman', Times, serif;
+    padding-bottom: 3px;
+    margin-top: 1px;
+    border-bottom: 3px solid #dddd;
+}
+
+.header-container {
+	border-bottom: 2px solid #cccccc;
+	background-color: #ffffff;
+    height: 60px;
+    width: 100%;
+
+}
+
+.main-container {
+    position: absolute;
+    overflow: auto;
+    clear: both;
+    margin: 0 auto;
+    background-color: #ffffff;
+    width: 960px;
+    height: auto;
+    border:2px solid #dddddd;
+    margin-top: 30px;
+    margin-left: 120px
+}
+
+#bio-image {
+    width: 250px;
+    height: 100px;
+    clear: both;
+    float: left;
+}
+
+#box {
+    display: inline-block;
+    width: 240px;
+    height: 200px;
+    margin: 25px;
+    margin-left: 20px;
+}
+
+.project {
+    float: left;
+    position: relative;
+    top: -10px;
+    width: 100%;
+    height: 150px;
+}
+
+.project-2 {
+    float: left;
+    position: relative;
+    top: -10px;
+    width: 100%;
+    height: 150px;
+}
+
+.project-3 {
+    float: left;
+    position: relative;
+    top: -15px;
+    width: auto;
+    height: 170px;
+    left: 30%;
+}
+
+.project-title {
+    float: left;
+    position: relative;
+    top: -15px;
+    width: 100%;
+    height: 30px;
+    background-color: #4aaaa5;
+    color: #fff;
+    text-align: center;
+}
+
+.project-title2 {
+    float: left;
+    position: relative;
+    top: -30px;
+    width: 100%;
+    height: 25px;
+    background-color: #4aaaa5;
+    color: #fff;
+    text-align: center;
+}
+
+#main-bio,
+#contact-form,
+#project-portfolio {
+	position: relative;
+	text-align: left;
+    width: 860px;
+    margin-bottom: 50px;
+    margin-left: 40px;
+    padding:10px;
+    height: auto;
+}
+
+
+#contact-form {
+    height: 520px;
+}
+
+
+input, textarea {
+    width: 100%;
+    padding: 10px 20px 10px 10px;
+    margin: 8px 0;
+    border-color: #dddd;
+    border-style: solid;
+    border-width: 2px;
+    font-size: 25px;
+}
+
+.button {
+    background-color: #4aaaa5;
+    border: none;
+    color: #fff;
+    width: 100px;
+    height: 30px;
+    font-size: 14px;
+}
+
+button:hover{ 
+    background-color: #777777;
+}
+
+footer {
+    position: fixed;
+    bottom: 0px;
+    margin: 0 auto;
+    left: 0;
+    background-color: #666;
+    text-align: center;
+    color: #777;
+    padding: 18px;
+    width: 100%;
+    border-top: 5px solid #4aaaa5;
+    height: 50px;
+    padding: 10px;
+}
+
+@media screen and (max-width: 980px) {
+   
+    .header-container, p, h2 {
+        width: 100%; 
+    }
+
+    header {
+        width: 25%;
+    }
+
+    nav {
+        left: 70%;
+        width: 30%;
+    }
+
+    #bio-image{ 
+        width: 30%;
+    }
+
+    #contact {
+        width: 95%;
+        margin: 0 auto;
+    }
+
+    #project-portfolio {
+        width: 100%;
+        margin-left: 0;
+    }
+
+    .main-container {
+       width: 70%;
+    }
+
+    #main-bio, #contact-form  {
+        width: 85%;
+    }
+}
+
+@media screen and (max-width: 768px) {
+
+    .header-container {
+        width: 100%;
+    }
+   
+    p, h2, #contact-form, #project-portfolio {
+        width: 95%;   
+    }
+
+    nav {
+        width: 50%;
+        left: 48%;
+    }
+
+    header {
+        width: 30%;
+        margin-left: 5%;
+        font-size: 19px;
+    }
+
+    #bio-image{
+        width: 40%;
+    }
+
+    .main-container{
+       width: 90%;
+       margin-left: 5%;
+    }
+
+    #main-bio, #contact {
+        width: 90%;
+    }
+}
+
+@media screen and (max-width: 640px) {
+   
+    p, #bio-image, h2, #contact-form, #project-portfolio{
+        width: 95%; 
+        padding: 0 auto;  
+    }
+
+    nav {
+        width: 70%;
+        left: 10%;
+     }
+
+    .header-container{
+        position: relative;
+        top: 55px;
+
+    }
+
+    header {
+        width: 100%;
+        font-size: 5vw;
+        margin: 0;
+    }
+
+    .main-container {
+       width: 80%;
+       position: relative;
+       margin-left: 10%;
+       margin-top: 80px;
+    }
+
+    #main-bio, #contact, #project-portfolio {
+        width: 75%;
+    }
+
+    #box {
+        width: 90%;
+       padding: 0 auto;
+    }
+}
